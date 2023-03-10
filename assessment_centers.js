@@ -265,7 +265,7 @@ const ac = document.getElementById('ac')
 
 const a = (id, center) => {
 	return `
-		<div class="col-xl-3 col-lg-4 col-md-6 shadow p-3 pb-5 bg-body rounded m-2 position-relative list">
+		<div class="col-xl-3 col-lg-4 col-md-6 shadow p-3 pb-5 bg-body rounded m-2 position-relative list2">
             <p class="title">${center}</p>
             <button class="btn btn-outline-secondary btn-tesda" data-bs-toggle="modal" data-bs-target="#ac${id}">
                 View qualifications
@@ -299,17 +299,17 @@ const mac = (center, address, email, number, qualifications) => {
 		<div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                <div class="modal-header">
-                  	<h5 class="modal-title" id="exampleModalLabel">Assessment Center</h5>
+                  	<h4 class="modal-title" id="exampleModalLabel">Assessment Center</h4>
                   	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                </div>
                <div class="modal-body">
                   <div class="alert alert-dark" role="alert">
                      <h2>${center}</h2>
-                     <h5>
+                     <h6>
                         Location : <strong>${address}</strong>
-                     </h5>
-                     <h5>Email : <strong>${email}</strong></h5>
-                     <h5>Contact : <strong>${number}</strong></h5>
+                     </h6>
+                     <h6>Email : <strong>${email}</strong></h6>
+                     <h6>Contact : <strong>${number}</strong></h6>
                   </div>
                   <div class="alert alert-light" role="alert">
                   	<h3>Qualifications</h3>
