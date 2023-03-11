@@ -3,7 +3,7 @@
 const services = [
 	{
 		title : 'NC Renewal',
-		note : 'The purpose of this service is to check if your requirements is all correct to prevents you for bringing the wrong requirements when renewing your NC in the Main office',
+		note : 'The purpose of this service is to check if your requirements is all correct to prevents you from bringing the wrong requirements when renewing your NC in the Main office',
 		requirements : [
 			'Duly Accomplished Application Form',
 			'Photocopy of NC (with Original copy presented)',
@@ -16,7 +16,7 @@ const services = [
 	},
 	{
 		title : 'COC Renewal',
-		note : 'The purpose of this service is to check if your requirements is all correct to prevents you for bringing the wrong requirements when renewing your COC in the Main office',
+		note : 'The purpose of this service is to check if your requirements is all correct to prevents you from bringing the wrong requirements when renewing your COC in the Main office',
 		requirements : [
 			'Duly Accomplished Application Form',
 			'Photocopy of COC (with Original copy presented)',
@@ -29,7 +29,7 @@ const services = [
 	},
 	{
 		title : 'TMC Renewal',
-		note : 'The purpose of this service is to check if your requirements is all correct to prevents you for bringing the wrong requirements when renewing your TMC in the Main office',
+		note : 'The purpose of this service is to check if your requirements is all correct to prevents you from bringing the wrong requirements when renewing your TMC in the Main office',
 		requirements : [
 			'Duly Accomplished Application Form',
 			'Photocopy of TMC (with Original copy presented)',
@@ -42,7 +42,7 @@ const services = [
 	},
 	{
 		title : 'NTTC I Renewal',
-		note : 'The purpose of this service is to check if your requirements is all correct to prevents you for bringing the wrong requirements when renewing your NTTC I in the Main office',
+		note : 'The purpose of this service is to check if your requirements is all correct to prevents you from bringing the wrong requirements when renewing your NTTC I in the Main office',
 		requirements : [
 			'Duly Accomplished Application Form',
 			'Photocopy of TMC (with Original copy presented)',
@@ -55,7 +55,7 @@ const services = [
 	},
 	{
 		title : 'APPLICATION FOR NTTC I',
-		note : 'The purpose of this service is to check if your requirements is all correct to prevents you for bringing the wrong requirements when applying for NTTC I in the Main office',
+		note : 'The purpose of this service is to check if your requirements is all correct to prevents you from bringing the wrong requirements when applying for NTTC I in the Main office',
 		requirements : [
 			'Accomplished Application Form (Trainer`s/Assessor`s Profile)',
 			'Photocopy of Diploma/Official Transcript of Records',
@@ -68,7 +68,7 @@ const services = [
 	},
 	{
 		title : 'APPLICATION FOR ASSESSMENT',
-		note : 'The purpose of this service is to check if your requirements is all correct to prevents you for bringing the wrong requirements when applying for Assessment in the Main office',
+		note : 'The purpose of this service is to check if your requirements is all correct to prevents you from bringing the wrong requirements when applying for Assessment in the Main office',
 		requirements : [
 			'Duly Accomplished Application Form',
 			'Self Assessment Guide',
@@ -80,7 +80,7 @@ const services = [
 	},
 	{
 		title : 'APPLICATION FOR CAV',
-		note : 'The purpose of this service is to check if your requirements is all correct to prevents you for bringing the wrong requirements when applying for Certification, Authentication & Verification (CAV) in the Main office',
+		note : 'The purpose of this service is to check if your requirements is all correct to prevents you from bringing the wrong requirements when applying for Certification, Authentication & Verification (CAV) in the Main office',
 		requirements : [
 			'Transcript of Records-Original & two (2) certified photocopy of school-(for employment purpose)',
 			'Diploma Original & two (2) certified photocopy of the school',
