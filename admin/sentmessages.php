@@ -41,9 +41,14 @@ while($row = $msgresult->fetch_assoc()){
       </nav>
     </div>
     <section class="section dashboard">
+      <div class="card filter-search">
+        <div class="card-body">
+          <input id="train" onkeyup="search()" type="text" class="form-control mt-4" placeholder="Search here">
+        </div>
+      </div>
       <div class="row">
       <?php foreach( $messages as $row): ?>
-        <div class="col-xl-12">
+        <div class="col-xl-12 list">
             <div class="card info-card customers-card">
                 <div class="filter">
                     <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
@@ -89,5 +94,16 @@ while($row = $msgresult->fetch_assoc()){
     </div>
     <?php endforeach ?>
     <?php include 'footer.php' ?>
+    <script>
+      const search = () => {
+        const lists = document.querySelectorAll('.list')
+        const textToSearch = document.getElementById('train').value.toUpperCase()
+        for (let i of lists) {
+          const text = i.children[0].textContent || i.children[0].innerText
+          if (text.toUpperCase().indexOf(textToSearch) > -1) i.style.display = ''
+          else i.style.display = 'none'
+        }
+      }
+    </script>
 </body>
 </html>

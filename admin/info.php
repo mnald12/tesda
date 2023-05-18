@@ -107,7 +107,7 @@ $tabout = $result2->fetch_assoc();
                 <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
                   <form method="post" action="methods/editinfo.php" enctype="multipart/form-data">
                     <div class="row mb-3">
-                      <label for="h-image" class="col-md-4 col-lg-3 col-form-label">Home Image</label>
+                      <label for="h-image" class="col-md-4 col-lg-3 col-form-label">Home Background</label>
                       <div class="col-md-8 col-lg-9">
                         <img id="img" src="../images/<?= $tinfo['image'] ?>" alt="Profile">
                         <div class="pt-2">

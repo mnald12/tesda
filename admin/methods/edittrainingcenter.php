@@ -3,6 +3,7 @@
 include '../connection.php';
 
 $id = mysqli_real_escape_string($conn, $_POST['id']);
+$uname = mysqli_real_escape_string($conn, $_POST['uname']);
 $center = mysqli_real_escape_string($conn, $_POST['center']);
 $address = mysqli_real_escape_string($conn, $_POST['address']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -12,6 +13,11 @@ $qualifications = mysqli_real_escape_string($conn, $_POST['qualifications']);
 $query = "SELECT * FROM training_centers where id = '$id' ";
 $result = $conn->query($query);
 $tc = $result->fetch_assoc();
+
+if($uname !== $tc['username']){
+    $update = "UPDATE training_centers SET username = '$uname' where id = '$id' ";
+    $result = $conn->query($update);
+}
 
 if($center !== $tc['center']){
     $update = "UPDATE training_centers SET center = '$center' where id = '$id' ";

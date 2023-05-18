@@ -33,15 +33,15 @@ $imgs = implode(",",$ntoup);
 $title = mysqli_real_escape_string($conn, $_POST['title']);
 $name = mysqli_real_escape_string($conn, $_POST['name']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
-$date = date("Y-m-d");
+$date = date("F d, Y");
 $status = 'Pending';
 
-$insert="INSERT Into certificates (name, email, req_for, files, date, status) VALUES ('$name', '$email', '$title', '$imgs', '$date', '$status')";
+$insert="INSERT Into certificates (name, email, req_for, files, date, status) VALUES ('$name', '$email', '$title Renewal', '$imgs', '$date', '$status')";
 $basicresult=mysqli_query($conn, $insert);
 
 session_start();
-$_SESSION['req_message'] = 'Your requirements has been uploaded. Thank you for using our service!';
+$_SESSION['req_message'] = 'Your requirements has been uploaded. Please wait for ourr response Thank you';
 
-header("Location: ./index.php#services");
+header("Location: ./validator.php?type=$title");
 
 ?>

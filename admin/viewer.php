@@ -17,6 +17,13 @@
     $reqresult = $conn->query($reqquerry);
     $requirements = $reqresult->fetch_assoc();
     $reqimg = explode(",", $requirements['files']);
+
+    $cer = explode(" ", $requirements['req_for']);
+    $m = $cer[0];
+
+    $appmess = "Good day! Your application for renewal of $m has been verified! \n\nKindly go to our provincial office to renew your $m. \n\nAlso please surrender your original copy of $m. Prepare 100 pesos for renewal fee. Thank you!";
+    $rejmess = "Good day! Your application for renewal of $m has been denied!  \n\n[ State the reason] \n\nThank you!";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,12 +69,14 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title pb-0"><span><?= $requirements['email'] ?></span> <span>| <?= $requirements['date'] ?></span></h5>
-                        <h5 class="card-title pt-0"><i class="bi bi-person"></i> <?= $requirements['name'] ?></h5>
+                        <h5 class="card-title pt-0 pb-0"><i class="bi bi-person"></i> <?= $requirements['name'] ?></h5>
+                        <hr>
                         <br>
-                        <h3 class="card-subtitle"><?= $requirements['req_for'] ?></h3>
+                        <h3 class="card-subtitle">Asking for <?= $requirements['req_for'] ?></h3>
+                        <br>
                         <div class="row">
                             <?php $i=0; foreach( $reqimg as $img): ?>
-                            <div class="col-lg-6 p-2"><img id="req<?= $i ?>" onClick="zoom(<?= $i ?>)" src="../uploads/<?= $img ?>" class="img-fluid" style="width: 100%; height: 100%; cursor: pointer"></div>
+                            <div class="col-lg-4 p-2"><img id="req<?= $i ?>" onClick="zoom(<?= $i ?>)" src="../uploads/<?= $img ?>" class="img-fluid" style="width: 100%; height: 100%; cursor: pointer"></div>
                             <?php $i++; endforeach ?>
                         </div>
                         <div style="text-align: left" class="pt-3">
@@ -100,7 +109,7 @@
                         <div class="row mb-3">
                             <label for="aptxt" class="col-md-4 col-lg-3 col-form-label">Message</label>
                             <div class="col-md-8 col-lg-9">
-                                <textarea name="msg" class="form-control" id="aptxt" style="height: 100px" required></textarea>
+                                <textarea name="msg" class="form-control" id="aptxt" style="height: 260px" required><?= $appmess ?></textarea>
                             </div>
                         </div>
                         <div style="width: 100%; text-align: right">
@@ -131,7 +140,7 @@
                         <div class="row mb-3">
                             <label for="rejtxt" class="col-md-4 col-lg-3 col-form-label">Message</label>
                             <div class="col-md-8 col-lg-9">
-                                <textarea name="msg" class="form-control" id="rejtxt" style="height: 100px" required></textarea>
+                                <textarea name="msg" class="form-control" id="rejtxt" style="height: 250px" required><?= $rejmess ?></textarea>
                             </div>
                         </div>
                         <div style="width: 100%; text-align: right">

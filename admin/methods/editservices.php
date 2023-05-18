@@ -20,6 +20,6 @@ if($req !== $serv['requirements']){
     $result = $conn->query($update);
 }
 
-header('location: ../services.php');
+header('location: ../renewal.php');
 
 ?>

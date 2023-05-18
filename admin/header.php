@@ -12,7 +12,7 @@ $uinfo = $uresult->fetch_assoc();
     <div class="d-flex align-items-center justify-content-between">
         <a href="dashboard.php" class="logo d-flex align-items-center">
             <img src="assets/img/tsd.ico" alt="" />
-            <span class="d-none d-lg-block">TESDA Admin</span>
+            <span class="d-none d-lg-block">TESDA MS</span>
         </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
     </div>

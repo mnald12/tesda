@@ -38,42 +38,60 @@ $_SESSION['nav-active'] = 'training';
         <div class="col-xl-12">
           <div class="card">
             <div class="card-body pt-2">
-                <h3 class="card-title">Add Training Center</h3>
-            <form action="methods/addtrainingcenter.php" method="post">
+              <h3 class="card-title">Add Training Center</h3>
+              <form action="methods/addtrainingcenter.php" method="post">
                 <div class="row mb-3">
-                <label for="center" class="col-md-4 col-lg-3 col-form-label">Training Center</label>
-                <div class="col-md-8 col-lg-9">
-                    <input name="center" type="text" class="form-control" id="center">
-                </div>
+                  <label for="uname" class="col-md-4 col-lg-3 col-form-label">Username</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="uname" type="text" class="form-control" id="uname">
+                  </div>
                 </div>
                 <div class="row mb-3">
-                <label for="address" class="col-md-4 col-lg-3 col-form-label">Address</label>
-                <div class="col-md-8 col-lg-9">
+                  <label for="pwd" class="col-md-4 col-lg-3 col-form-label">Password</label>
+                  <div class="col-md-8 col-lg-9">
+                      <input name="pwd" type="text" class="form-control" id="pwd">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="center" class="col-md-4 col-lg-3 col-form-label">Training Center</label>
+                  <div class="col-md-8 col-lg-9">
+                      <input name="center" type="text" class="form-control" id="center">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="address" class="col-md-4 col-lg-3 col-form-label">Address</label>
+                  <div class="col-md-8 col-lg-9">
                     <input name="address" type="text" class="form-control" id="address">
-                </div>
-                </div>
-                <div class="row mb-3">
-                <label for="email" class="col-md-4 col-lg-3 col-form-label">Email</label>
-                <div class="col-md-8 col-lg-9">
-                    <input name="email" type="text" class="form-control" id="email">
-                </div>
+                  </div>
                 </div>
                 <div class="row mb-3">
-                <label for="number" class="col-md-4 col-lg-3 col-form-label">Contact Number</label>
-                <div class="col-md-8 col-lg-9">
-                    <input name="number" type="text" class="form-control" id="number">
-                </div>
+                  <label for="email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                  <div class="col-md-8 col-lg-9">
+                      <input name="email" type="text" class="form-control" id="email">
+                  </div>
                 </div>
                 <div class="row mb-3">
-                <label for="qualifications" class="col-md-4 col-lg-3 col-form-label">Qualifications</label>
-                <div class="col-md-8 col-lg-9">
-                    <textarea name="qualifications" class="form-control" id="qualifications" style="height: 100px"></textarea>
+                  <label for="number" class="col-md-4 col-lg-3 col-form-label">Contact Number</label>
+                  <div class="col-md-8 col-lg-9">
+                      <input name="number" type="text" class="form-control" id="number">
+                  </div>
                 </div>
+                <div class="row mb-3">
+                  <label for="fb" class="col-md-4 col-lg-3 col-form-label">Facebook Link</label>
+                  <div class="col-md-8 col-lg-9">
+                    <input name="facebook" type="text" class="form-control" id="fb">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="qualifications" class="col-md-4 col-lg-3 col-form-label">Qualifications</label>
+                  <div class="col-md-8 col-lg-9">
+                      <textarea name="qualifications" class="form-control" id="qualifications" style="height: 100px"></textarea>
+                  </div>
                 </div>
                 <div style="text-align: right;">
-                <button type="submit" class="btn btn-primary">Save</button>
+                  <button type="submit" class="btn btn-primary">Save</button>
                 </div>
-            </form>
+              </form>
             </div>
           </div>
         </div>

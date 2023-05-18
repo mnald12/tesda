@@ -42,9 +42,14 @@ while($row = $assessmentresult->fetch_assoc()){
       </nav>
     </div>
     <section class="section profile">
+      <div class="card filter-search">
+        <div class="card-body">
+          <input id="train" onkeyup="search()" type="text" class="form-control mt-4" placeholder="Search here">
+        </div>
+      </div>
       <div class="row">
       <?php foreach( $assessment as $row): ?>
-        <div class="col-xl-12">
+        <div class="col-xl-12 list">
           <div class="card">
             <div class="card-body pt-3">
               <ul class="nav nav-tabs nav-tabs-bordered">
@@ -142,5 +147,16 @@ while($row = $assessmentresult->fetch_assoc()){
     </section>
   </main>
   <?php include 'footer.php' ?>
+  <script>
+    const search = () => {
+      const lists = document.querySelectorAll('.list')
+      const textToSearch = document.getElementById('train').value.toUpperCase()
+      for (let i of lists) {
+        const text = i.children[0].textContent || i.children[0].innerText
+        if (text.toUpperCase().indexOf(textToSearch) > -1) i.style.display = ''
+        else i.style.display = 'none'
+      }
+    }
+  </script>
 </body>
 </html>

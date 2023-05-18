@@ -29,15 +29,15 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link <?= $_SESSION['nav-active'] == 'services' ? '' : 'collapsed' ?>" href="services.php">
-                <i class="bi bi-globe"></i>
-                <span>Services</span>
+            <a class="nav-link <?= $_SESSION['nav-active'] == 'renewal' ? '' : 'collapsed' ?>" href="renewal.php">
+                <i class="bi bi-folder"></i>
+                <span>Renewal</span>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link <?= $_SESSION['nav-active'] == 'events' ? '' : 'collapsed' ?>" href="events.php">
                 <i class="bi bi-calendar"></i>
-                <span>Events</span>
+                <span>News & Events</span>
             </a>
         </li>
         <li class="nav-item">

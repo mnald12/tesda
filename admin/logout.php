@@ -1,12 +1,14 @@
 <?php
 session_start();
 
+unset($_SESSION['id']);
 unset($_SESSION['username']);
-unset($_SESSION['role']);
+session_destroy();
+
+session_start();
+
 $_SESSION['message'] = "You have been logged out!";
 $_SESSION['success'] = 'danger';
-
-session_destroy();
 
 header('location: ../admin/index.php');
 

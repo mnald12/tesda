@@ -62,14 +62,14 @@
                      <div class="col-sm-4">
                         <div class="card info-card sales-card">
                            <div class="card-body">
-                              <h5 class="card-title">Services</h5>
+                              <h5 class="card-title">Renewal</h5>
                               <div class="d-flex align-items-center">
                                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                                     <i class="bi bi-files"></i>
                                  </div>
                                  <div class="ps-3">
                                     <h6><?= $services ?></h6>
-                                    <span class="text-muted small pt-2 ps-1">Services Total</span>
+                                    <span class="text-muted small pt-2 ps-1">Renewal Total</span>
                                  </div>
                               </div>
                            </div>

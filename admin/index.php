@@ -1,4 +1,11 @@
-<?php session_start(); ?>
+<?php
+
+  session_start();
+  if(isset($_SESSION['id'])&&isset($_SESSION['username'])){
+    header('location: ../admin/dashboard.php');
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,7 +61,7 @@
                 </div>
               </div>
               <div class="credits">
-                Designed by <a href="https://bootstrapmade.com/">Kisha & Shaine</a>
+                Designed by <a href="#">Kisha & Shaine</a>
               </div>
             </div>
           </div>
